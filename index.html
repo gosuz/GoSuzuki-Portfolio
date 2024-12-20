@@ -10,23 +10,25 @@ China”> -->
   <title>Go Suzuki</title>
   <!-- Bootstrap stylsheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- My stylesheet -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#about-me">About Me</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
-          <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+  <div class="navbar-container sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto text-center">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -34,7 +36,7 @@ China”> -->
   <div id="about-me">
     <h1>Go Suzuki</h1>
     <h2>Aspiring QA engineer with a background in Fitness and Retail</h2>
-    <img src="images/prof_pic.jpg" alt="Go Suzuki img">
+    <img src="images/prof_pic.jpg" alt="Go Suzuki img" id="prof-pic" class="py-3">
     <p>I was born and raised in HK. MORE INFO ABOUT ME _______________ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada elit mattis velit faucibus, id fermentum odio varius. Morbi semper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor gravida. Mauris sed laoreet eros, ac bibendum massa. Ut ac molestie orci. In vel dui nunc. Aenean molestie odio sed est venenatis fermentum in at turpis. Aliquam condimentum est pellentesque nibh cursus tempus. Fusce viverra tristique commodo.
     </p>
     <!-- Include image in here later -->
@@ -43,47 +45,64 @@ China”> -->
     <h1>Projects</h1>
       <!-- Add cards if you're going to add cards for the projects -->
       <div id="card-care-key">
-        <h2>Care Key</h2>
-          <a href="https://github.com/gosuz/care-key" target="blank">
-            <img src="images/github.png" alt="github icon">
-          </a>
+        <div class="project-title-github-container d-flex align-items-center mb-3">
+          <h2 class="me-3 mb-2">Care Key</h2>
+            <a href="https://github.com/gosuz/care-key" target="blank">
+              <img src="images/github.png" alt="github icon" class="github-icons">
+            </a>
+        </div>
           <!-- Clickable cards to redirect to card page with more info -->
-          <p>Brief info about carekey......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor.</p>
+          <!-- <img src="/images/portfolio/care_key_goals.png" alt="" class="care-key-imgs"> -->
+          <img src="images/portfolio/care_key_dashboard.png" alt="" class="care-key-imgs">
+          <p class="project-info">Brief info about carekey......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis feugiat ante, non volutpat nibh. Etiam ex justo, imperdiet et odio at, vehicula aliquam arcu. Vestibulum vel lorem vel enim vulputate sagittis. Vestibulum congue vehicula ultricies. Quisque gravida, erat non porttitor blandit, ex dolor sagittis quam, vel congue tortor metus id enim. Integer ac dolor nibh. Donec non commodo tortor. Suspendisse sed tincidunt sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eros mi, dictum ac porta efficitur, volutpat at turpis. Nulla auctor magna eget massa laoreet, sit amet aliquet eros lobortis. Nunc hendrerit leo lorem, ut suscipit ante convallis eget. Maecenas porttitor euismod dolor, eget lacinia neque. Morbi venenatis dictum quam nec bibendum. Praesent nec risus id elit pulvinar hendrerit nec id erat.
+          </p>
       </div>
-      <div id="card-paw-time">
-        <h2>Paw-Time</h2>
-          <a href="https://github.com/gosuz/paw-time" target="blank">
-            <img src="images/github.png" alt="github icon">
-          </a>
+      <div id="card-paw-time" class="mt-5">
+        <div class="project-title-github-container d-flex align-items-center mb-3">
+          <h2 class="me-3">Paw-Time</h2>
+            <a href="https://github.com/gosuz/paw-time" target="blank">
+              <img src="images/github.png" alt="github icon" class="github-icons">
+            </a>
+        </div>
           <!-- Clickable cards to redirect to card page with more info -->
-          <p>Brief info about Paw-Time......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor.</p>
+          <img src="images/portfolio/paw_time_home.png" alt="" class="paw-time-imgs">
+          <!-- <img src="/images/portfolio/paw_time_picks.png" alt="" class="paw-time-imgs">
+          <img src="/images/portfolio/paw_time_shelters.png" alt="" class="paw-time-imgs"> -->
+          <p class="project-info">Brief info about Paw-Time......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis feugiat ante, non volutpat nibh. Etiam ex justo, imperdiet et odio at, vehicula aliquam arcu. Vestibulum vel lorem vel enim vulputate sagittis. Vestibulum congue vehicula ultricies. Quisque gravida, erat non porttitor blandit, ex dolor sagittis quam, vel congue tortor metus id enim. Integer ac dolor nibh. Donec non commodo tortor. Suspendisse sed tincidunt sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eros mi, dictum ac porta efficitur, volutpat at turpis. Nulla auctor magna eget massa laoreet, sit amet aliquet eros lobortis. Nunc hendrerit leo lorem, ut suscipit ante convallis eget. Maecenas porttitor euismod dolor, eget lacinia neque. Morbi venenatis dictum quam nec bibendum. Praesent nec risus id elit pulvinar hendrerit nec id erat.
+
+          </p>
       </div>
   </div>
   <div id="contact">
     <h1>Contact</h1>
       <p>Check out my Github or reach out to me via social media or email. </p>
-      <div id="linkedin-icon">
-        <a href="https://www.linkedin.com/in/gosuzuki/" target="blank">
+      <div id="contact-linkedin-icon" class="d-flex align-items-center my-4">
+        <a href="https://www.linkedin.com/in/gosuzuki/" target="blank" class="d-flex align-items-center text-decoration-none">
           <!-- add the link to your linkedin -->
-          <img src="images/linkedin.png" alt="linkedin icon">
+          <img src="images/linkedin.png" alt="linkedin icon" class="contact-icons me-3">
           <p>Linkedin</p>
         </a>
       </div>
-      <div id="github-icon">
-        <a href="https://github.com/gosuz" target="blank">
-          <img src="images/github.png" alt="github icon">
+      <div id="contact-github-icon" class="d-flex my-4">
+        <a href="https://github.com/gosuz" target="blank" class="d-flex align-items-center text-decoration-none">
+          <img src="images/github.png" alt="github icon" class="contact-icons me-3">
           <p>Github</p>
         </a>
       </div>
-      <div id="email-icon">
-        <a href="">
+      <div id="contact-email-icon" class="d-flex">
+        <a href="" class="d-flex align-items-center text-decoration-none">
           <!-- add link to github -->
-          <img src="images/email.png" alt="email icon">
+          <img src="images/email.png" alt="email icon" class="contact-icons me-3 mb-3">
             <p>Email</p>
           </a>
       </div>
       <!-- <a href="">Github Logo<p>Github</p></a> -->
       <!-- When clicked it shouold show my email - Use JS event listener -->
   </div>
+
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
