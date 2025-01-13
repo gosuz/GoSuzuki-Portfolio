@@ -34,47 +34,90 @@ China”> -->
     </div>
   </nav>
   <div id="about-me">
-    <h1>Go Suzuki</h1>
-    <h2>Aspiring QA engineer with a background in Fitness and Retail</h2>
+    <h1>About Me</h1>
+    <hr class="section-line">
+    <h2>Go Suzuki </h2>
+    <p>Aspiring QA engineer with a background in Fitness and Retail</p>
     <img src="images/prof_pic.jpg" alt="Go Suzuki img" id="prof-pic" class="py-3">
     <p>I was born and raised in HK. MORE INFO ABOUT ME _______________ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada elit mattis velit faucibus, id fermentum odio varius. Morbi semper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor gravida. Mauris sed laoreet eros, ac bibendum massa. Ut ac molestie orci. In vel dui nunc. Aenean molestie odio sed est venenatis fermentum in at turpis. Aliquam condimentum est pellentesque nibh cursus tempus. Fusce viverra tristique commodo.
     </p>
     <!-- Include image in here later -->
   </div>
   <div id="projects">
-    <h1 id="projects-title">Projects</h1>
+    <div id="projects-container">
+      <h1 id="projects-title">Projects</h1>
+      <hr class="section-line">
+    </div>
       <!-- Add cards if you're going to add cards for the projects -->
-      <div id="card-care-key">
-        <div class="project-title-github-container d-flex align-items-center mb-3">
-          <h2 class="me-3 mb-2">Care Key</h2>
+      <div id="card-care-key" class="cards">
+        <!-- Clickable cards to redirect to card page with more info -->
+        <!-- <img src="/images/portfolio/care_key_goals.png" alt="" class="care-key-imgs"> -->
+        <img src="images/portfolio/care_key_dashboard.png" alt="" class="care-key-imgs">
+        <div class="project-title-github-container">
+        <!-- #d-flex align-items-center -->
+          <h2 class="me-3 mb-2 project-title">Care Key</h2>
             <a href="https://github.com/gosuz/care-key" target="blank">
               <img src="images/github.png" alt="github icon" class="github-icons">
             </a>
         </div>
-          <!-- Clickable cards to redirect to card page with more info -->
-          <!-- <img src="/images/portfolio/care_key_goals.png" alt="" class="care-key-imgs"> -->
-          <img src="images/portfolio/care_key_dashboard.png" alt="" class="care-key-imgs">
-          <p class="project-info">Brief info about carekey......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis feugiat ante, non volutpat nibh. Etiam ex justo, imperdiet et odio at, vehicula aliquam arcu. Vestibulum vel lorem vel enim vulputate sagittis. Vestibulum congue vehicula ultricies. Quisque gravida, erat non porttitor blandit, ex dolor sagittis quam, vel congue tortor metus id enim. Integer ac dolor nibh. Donec non commodo tortor. Suspendisse sed tincidunt sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eros mi, dictum ac porta efficitur, volutpat at turpis. Nulla auctor magna eget massa laoreet, sit amet aliquet eros lobortis. Nunc hendrerit leo lorem, ut suscipit ante convallis eget. Maecenas porttitor euismod dolor, eget lacinia neque. Morbi venenatis dictum quam nec bibendum. Praesent nec risus id elit pulvinar hendrerit nec id erat.
-          </p>
-      </div>
-      <div id="card-paw-time" class="mt-5">
-        <div class="project-title-github-container d-flex align-items-center mb-3">
-          <h2 class="me-3">Paw-Time</h2>
-            <a href="https://github.com/gosuz/paw-time" target="blank">
-              <img src="images/github.png" alt="github icon" class="github-icons">
-            </a>
+        <p class="project-info">An app to promote self-care.
+          <a class="btn plus" data-bs-toggle="collapse" href="#collapseCareKey" role="button" aria-expanded="false" aria-controls="collapseCareKey">
+            +
+          </a>
+        </p>
+        <div class="tech-stack d-flex flex-wrap">
+          <span class="badge backend">Ruby on Rails</span>
+          <span class="badge frontend">JavaScript</span>
+          <span class="badge frontend">HTML</span>
+          <span class="badge frontend">SCSS</span>
+          <span class="badge ui-framework">Bootstrap</span>
         </div>
-          <!-- Clickable cards to redirect to card page with more info -->
-          <img src="images/portfolio/paw_time_home.png" alt="paw time home image" class="paw-time-imgs img-fluid">
-          <!-- <img src="/images/portfolio/paw_time_picks.png" alt="" class="paw-time-imgs">
-          <img src="/images/portfolio/paw_time_shelters.png" alt="" class="paw-time-imgs"> -->
-          <p class="project-info">Brief info about Paw-Time......................mper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis feugiat ante, non volutpat nibh. Etiam ex justo, imperdiet et odio at, vehicula aliquam arcu. Vestibulum vel lorem vel enim vulputate sagittis. Vestibulum congue vehicula ultricies. Quisque gravida, erat non porttitor blandit, ex dolor sagittis quam, vel congue tortor metus id enim. Integer ac dolor nibh. Donec non commodo tortor. Suspendisse sed tincidunt sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eros mi, dictum ac porta efficitur, volutpat at turpis. Nulla auctor magna eget massa laoreet, sit amet aliquet eros lobortis. Nunc hendrerit leo lorem, ut suscipit ante convallis eget. Maecenas porttitor euismod dolor, eget lacinia neque. Morbi venenatis dictum quam nec bibendum. Praesent nec risus id elit pulvinar hendrerit nec id erat.
+        <!-- Care Key Collapsed content -->
+        <div class="collapse" id="collapseCareKey">
+          <div class="card card-body">
+            Care Key collapsed content
+          </div>
+        </div>
+      </div>
 
+      <!-- Paw Time Card -->
+      <div id="card-paw-time" class="cards">
+        <img src="images/portfolio/paw_time_home.png" alt="paw time home image" class="paw-time-imgs img-fluid">
+        <!-- <img src="/images/portfolio/paw_time_picks.png" alt="" class="paw-time-imgs">
+        <img src="/images/portfolio/paw_time_shelters.png" alt="" class="paw-time-imgs"> -->
+        <div class="project-title-github-container d-flex align-items-center mb-0">
+          <h2 class="me-3 project-title">Paw-Time</h2>
+          <a href="https://github.com/gosuz/paw-time" target="blank">
+            <img src="images/github.png" alt="github icon" class="github-icons">
+          </a>
+        </div>
+        <div class="d-flex flex-column align-items-center projects">
+          <p class="project-info">
+            An app to connect animal shelters and adopters.
+            <a class="btn plus" data-bs-toggle="collapse" href="#collapsePawTime" role="button" aria-expanded="false" aria-controls="collapsePawTime">
+              +
+            </a>
           </p>
+          <div class="tech-stack d-flex flex-wrap">
+            <span class="badge backend">Ruby on Rails</span>
+            <span class="badge frontend">JavaScript</span>
+            <span class="badge frontend">HTML</span>
+            <span class="badge frontend">SCSS</span>
+            <span class="badge deployment">Heroku</span>
+            <span class="badge ui-framework">Bootstrap</span>
+          </div>
+          <!-- Paw-Time Collapsed content -->
+          <div class="collapse" id="collapsePawTime">
+            <div class="card card-body">
+              Place more information about Paw-time here
+            </div>
+          </div>
+        </div>  <!-- Clickable cards to redirect to card page with more info -->
       </div>
   </div>
   <div id="contact">
     <h1>Contact</h1>
+    <hr class="section-line">
       <p>Check out my Github or reach out to me via social media or email. </p>
       <div id="contact-linkedin-icon" class="d-flex align-items-center my-4">
         <a href="https://www.linkedin.com/in/gosuzuki/" target="blank" class="d-flex align-items-center text-decoration-none">
