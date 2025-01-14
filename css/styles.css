@@ -19,31 +19,146 @@ h1, h2, h3 {
 }
 
 /* Main Sections */
+.card {
+  border: none;
+  background-color: #F5F5F5;
+}
+
+.sections {
+  padding-top: 4.25rem;
+  padding-bottom: 6rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  /* d-flex flex-column align-items-center justify-content-center */
+  /* d-flex flex-column align-items-center justify-content-center */
+}
+
+
+
+#card-care-key {
+  margin-top: 3.25rem;
+}
+
+.project-title-github-container{
+  display: flex;
+  align-items: center;   /* Vertical centering */
+  justify-content: center;
+  /* Horizontal centering */
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+}
+
+p.project-info {
+  margin: 0;   /* Removes any margin */
+  padding: 0;  /* Removes any padding */
+  display: flex;
+  align-items: center;      /* Vertical centering */
+  justify-content: center;  /* Horizontal centering */
+  width: 100%;
+  height: 100%;
+  max-width: 85%;
+  box-sizing: border-box;
+}
+
+.section-line {
+  border: 0;
+  height: 5px;
+  width: 50%;
+  background-color: #4CAF50;
+  margin-top: 1rem; /* Adjusted to rem for scalability */
+  margin-bottom: 1rem; /* Adjusted to rem for scalability */
+}
+
 #about-me{
-  padding: 2.4rem 2.5rem 1.2rem;
-  /* left and right 2.5rem */
-  /* bottom = no padding */
+  padding-top: 4rem;
 }
+
 #projects{
-  padding: 2.4rem 2.5rem 1.8rem;
+  /* padding: 2.4rem 2.5rem 1.8rem; */
+  background-color: #F5F5F5;
 }
-#contact{
+
+#about-me-description{
+  padding-top: 1.5rem;
+}
+
+/* #contact{
   padding: 2.4rem 2.5rem 7rem;
+} */
+
+.project-title {
+  color: #6A8D92;
 }
 
 /* projects-title */
 #projects-title{
-  margin-bottom: 0.9rem;
+  margin-bottom: 0rem;
 }
 
 /* Project-info */
 .project-info{
   padding-top: 1.2rem;
+  width: 100%;
 }
+
+/* Tech stack */
+.tech-stack {
+  padding: 0.5rem 1rem;    /* 2 rem for top & bottom, 1rem for L/R */
+}
+
+.backend {
+  color: rgb(211, 65, 68);
+  background-color: rgba(211, 65, 68, 0.1);
+  border: solid 1px rgb(211, 65, 68);
+}
+
+.frontend {
+  color: rgb(64, 129, 209);
+  background-color: rgba(64, 129, 209, 0.1);
+  border: solid 1px rgb(64, 129, 209);
+}
+
+.deployment {
+  color: rgb(31, 124, 49);
+  background-color: rgba(31, 124, 49, 0.1);
+  border: solid 1px rgb(31, 124, 49);
+}
+
+.ui-framework{
+  color: rgb(112, 85, 198);
+  background-color: rgba(112, 85, 198, 0.1);
+  border: solid 1px rgb(112, 85, 198);
+}
+
+.plus {
+  color: #d34144;
+}
+/* frontend: HTML/SCSS/JavaScript */
+/* ui framework: bootstrap */
+/* Backed: Rails */
+/* Deployment: Heroku */
+
+#project-info-paw-time {
+  margin: 0.5rem;
+}
+
 
 /* -- Images & Icons */
 #prof-pic{
   width: 290px;
+  border-radius: 40%;
+}
+
+.cards img{
+  border-radius: 4%;
 }
 
 .github-icons{
