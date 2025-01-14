@@ -10,10 +10,26 @@ body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
   margin: 0;
   font-size: 16px;
+  line-height: 1.5;
 }
-h1, h2, h3 {
+h1{
   font-family: "Poppins", "sans-serif";
+  font-size: 2rem;
+  line-height: 1.2;
 }
+
+h2 {
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
 .text-center {
   text-align: center;
 }
@@ -90,9 +106,9 @@ p.project-info {
   padding-top: 1.5rem;
 }
 
-/* #contact{
-  padding: 2.4rem 2.5rem 7rem;
-} */
+#contact{
+  padding-bottom: 15rem;
+}
 
 .project-title {
   color: #6A8D92;
@@ -175,4 +191,25 @@ p.project-info {
 
 .care-key-imgs{
   height:400px;
+}
+
+
+/* Media Queries */
+/* Adjustments for tablets */
+@media (min-width: 768px) {
+  /* set the fonts size for the  */
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    /* set font-size & line-height */
+  }
+  h2 {
+    /* set font-size & line-height */
+  }
+  h3 {
+    /* set font-size & line-height */
+  }
 }
