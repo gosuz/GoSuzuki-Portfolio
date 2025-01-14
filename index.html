@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name=“description” content=“Full-Stack Developer and Agile Project Manager, based in Shanghai,
+China”> -->
+  <!-- <meta name=“keywords” content=“Maria Altyeva, developer,Ruby on Rails, RoR,HTML, JavaScript”> -->
+  <meta name=“author” content=“Go Suzuki”>
+  <title>Go Suzuki</title>
+  <!-- Bootstrap stylsheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- My stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="navbar-container sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto text-center">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="about-me">
+    <h1>About Me</h1>
+    <hr class="section-line">
+    <h2>Go Suzuki </h2>
+    <p>Aspiring QA engineer with a background in Fitness and Retail</p>
+    <img src="images/prof_pic.jpg" alt="Go Suzuki img" id="prof-pic" class="py-3">
+    <p>I was born and raised in HK. MORE INFO ABOUT ME _______________ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada elit mattis velit faucibus, id fermentum odio varius. Morbi semper orci vel tincidunt facilisis. Donec at bibendum purus. Vivamus mollis elit vitae tortor dapibus, id accumsan tortor gravida. Mauris sed laoreet eros, ac bibendum massa. Ut ac molestie orci. In vel dui nunc. Aenean molestie odio sed est venenatis fermentum in at turpis. Aliquam condimentum est pellentesque nibh cursus tempus. Fusce viverra tristique commodo.
+    </p>
+    <!-- Include image in here later -->
+  </div>
+  <div id="projects">
+    <div id="projects-container">
+      <h1 id="projects-title">Projects</h1>
+      <hr class="section-line">
+    </div>
+      <!-- Add cards if you're going to add cards for the projects -->
+      <div id="card-care-key" class="cards">
+        <!-- Clickable cards to redirect to card page with more info -->
+        <!-- <img src="/images/portfolio/care_key_goals.png" alt="" class="care-key-imgs"> -->
+        <img src="images/portfolio/care_key_dashboard.png" alt="" class="care-key-imgs">
+        <div class="project-title-github-container">
+        <!-- #d-flex align-items-center -->
+          <h2 class="me-3 mb-2 project-title">Care Key</h2>
+            <a href="https://github.com/gosuz/care-key" target="blank">
+              <img src="images/github.png" alt="github icon" class="github-icons">
+            </a>
+        </div>
+        <p class="project-info">An app to promote self-care.
+          <a class="btn plus" data-bs-toggle="collapse" href="#collapseCareKey" role="button" aria-expanded="false" aria-controls="collapseCareKey">
+            +
+          </a>
+        </p>
+        <div class="tech-stack d-flex flex-wrap">
+          <span class="badge backend">Ruby on Rails</span>
+          <span class="badge frontend">JavaScript</span>
+          <span class="badge frontend">HTML</span>
+          <span class="badge frontend">SCSS</span>
+          <span class="badge ui-framework">Bootstrap</span>
+        </div>
+        <!-- Care Key Collapsed content -->
+        <div class="collapse" id="collapseCareKey">
+          <div class="card card-body">
+            Care Key collapsed content
+          </div>
+        </div>
+      </div>
+
+      <!-- Paw Time Card -->
+      <div id="card-paw-time" class="cards">
+        <img src="images/portfolio/paw_time_home.png" alt="paw time home image" class="paw-time-imgs img-fluid">
+        <!-- <img src="/images/portfolio/paw_time_picks.png" alt="" class="paw-time-imgs">
+        <img src="/images/portfolio/paw_time_shelters.png" alt="" class="paw-time-imgs"> -->
+        <div class="project-title-github-container d-flex align-items-center mb-0">
+          <h2 class="me-3 project-title">Paw-Time</h2>
+          <a href="https://github.com/gosuz/paw-time" target="blank">
+            <img src="images/github.png" alt="github icon" class="github-icons">
+          </a>
+        </div>
+        <div class="d-flex flex-column align-items-center projects">
+          <p class="project-info">
+            An app to connect animal shelters and adopters.
+            <a class="btn plus" data-bs-toggle="collapse" href="#collapsePawTime" role="button" aria-expanded="false" aria-controls="collapsePawTime">
+              +
+            </a>
+          </p>
+          <div class="tech-stack d-flex flex-wrap">
+            <span class="badge backend">Ruby on Rails</span>
+            <span class="badge frontend">JavaScript</span>
+            <span class="badge frontend">HTML</span>
+            <span class="badge frontend">SCSS</span>
+            <span class="badge deployment">Heroku</span>
+            <span class="badge ui-framework">Bootstrap</span>
+          </div>
+          <!-- Paw-Time Collapsed content -->
+          <div class="collapse" id="collapsePawTime">
+            <div class="card card-body">
+              Place more information about Paw-time here
+            </div>
+          </div>
+        </div>  <!-- Clickable cards to redirect to card page with more info -->
+      </div>
+  </div>
+  <div id="contact">
+    <h1>Contact</h1>
+    <hr class="section-line">
+      <p>Check out my Github or reach out to me via social media or email. </p>
+      <div id="contact-linkedin-icon" class="d-flex align-items-center my-4">
+        <a href="https://www.linkedin.com/in/gosuzuki/" target="blank" class="d-flex align-items-center text-decoration-none">
+          <!-- add the link to your linkedin -->
+          <img src="images/linkedin.png" alt="linkedin icon" class="contact-icons me-3">
+          <p>Linkedin</p>
+        </a>
+      </div>
+      <div id="contact-github-icon" class="d-flex my-4">
+        <a href="https://github.com/gosuz" target="blank" class="d-flex align-items-center text-decoration-none">
+          <img src="images/github.png" alt="github icon" class="contact-icons me-3">
+          <p>Github</p>
+        </a>
+      </div>
+      <div id="contact-email-icon" class="d-flex">
+        <a href="" class="d-flex align-items-center text-decoration-none">
+          <!-- add link to github -->
+          <img src="images/email.png" alt="email icon" class="contact-icons me-3 mb-3">
+            <p>Email</p>
+          </a>
+      </div>
+      <!-- <a href="">Github Logo<p>Github</p></a> -->
+      <!-- When clicked it shouold show my email - Use JS event listener -->
+  </div>
+
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

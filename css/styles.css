@@ -1,0 +1,63 @@
+/* --- Google Fonts --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
+
+/* --- Components design --- */
+/* @import url("components/card.css"); */
+@import url("components/navbar.css");
+
+/* --- Fonts & colors --- */
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  margin: 0;
+  font-size: 16px;
+}
+h1, h2, h3 {
+  font-family: "Poppins", "sans-serif";
+}
+.text-center {
+  text-align: center;
+}
+
+/* Main Sections */
+#about-me{
+  padding: 2.4rem 2.5rem 1.2rem;
+  /* left and right 2.5rem */
+  /* bottom = no padding */
+}
+#projects{
+  padding: 2.4rem 2.5rem 1.8rem;
+}
+#contact{
+  padding: 2.4rem 2.5rem 7rem;
+}
+
+/* projects-title */
+#projects-title{
+  margin-bottom: 0.9rem;
+}
+
+/* Project-info */
+.project-info{
+  padding-top: 1.2rem;
+}
+
+/* -- Images & Icons */
+#prof-pic{
+  width: 290px;
+}
+
+.github-icons{
+  width:30px;
+}
+
+.contact-icons{
+  width:60px;
+}
+
+.paw-time-imgs{
+  width:400px;
+}
+
+.care-key-imgs{
+  height:400px;
+}
