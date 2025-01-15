@@ -80,14 +80,15 @@ p.project-info {
   justify-content: center;  /* Horizontal centering */
   width: 100%;
   height: 100%;
-  max-width: 85%;
+  max-width: 95%;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .section-line {
   border: 0;
-  height: 5px;
-  width: 50%;
+  height: 0.3rem;
+  width: 40%;
   background-color: #4CAF50;
   margin-top: 1rem; /* Adjusted to rem for scalability */
   margin-bottom: 1rem; /* Adjusted to rem for scalability */
@@ -200,16 +201,74 @@ p.project-info {
   /* set the fonts size for the  */
 
   body {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    line-height: 1.6;
   }
 
   h1 {
     /* set font-size & line-height */
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
   h2 {
     /* set font-size & line-height */
+    font-size: 2rem;
+    line-height: 1.3;
   }
   h3 {
     /* set font-size & line-height */
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  .sections {
+    padding-right: 7rem;
+    padding-left:  7rem;
+  }
+
+  .section-line {
+    border: 0;
+    height: 0.3rem;
+    width: 22%;
+    /* /* margin-top: 1.5rem; */
+    margin-bottom: 1.5rem;
+  }
+
+  /* Make img to the left */
+  /* how do i make img + content align? */
+  /* whats the parent container of img + content? */
+    /* card-care-key */
+  /* Parent container */
+
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* why is it all crammed up though? */
+    margin-bottom: 4rem;
+    width: 100%;
+    gap: 5rem;
+    /* max-width: 100%;
+    min-width: 150px; */
+  }
+
+  .project-imgages {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Child container */
+  .cards-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centers the text inside the box */
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem; /* Space inside each box */
+    height:6.25rem;
+    width: 30rem; /* Width of each box */
   }
 }
