@@ -11,6 +11,9 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 h1{
   font-family: "Poppins", "sans-serif";
@@ -28,6 +31,17 @@ h3 {
   font-family: "Poppins", "sans-serif";
   font-size: 1.25rem;
   line-height: 1.4;
+}
+
+.whole-page-container {
+  display: flex;         /* Use flexbox for layout */
+  flex-direction: column; /* Stack sections vertically */
+  /* overflow: visible;
+  flex-grow: 1; */
+  height: 100%;
+  min-height: 100vh;
+
+  /* min-height: 100vh;      Ensure the container takes full height */
 }
 
 .text-center {
@@ -109,6 +123,8 @@ p.project-info {
 
 #contact{
   padding-bottom: 15rem;
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
@@ -129,6 +145,8 @@ p.project-info {
 /* Tech stack */
 .tech-stack {
   padding: 0.5rem 1rem;    /* 2 rem for top & bottom, 1rem for L/R */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .backend {
@@ -155,9 +173,23 @@ p.project-info {
   border: solid 1px rgb(112, 85, 198);
 }
 
-.plus {
+/* .plus {
   color: #d34144;
+} */
+
+a.plus {
+  color: #d34144; /* Set the text color to red */
+  background-color: transparent; /* Ensure the background stays transparent */
+  border: none; /* Remove any default border */
 }
+
+a.plus:focus,
+a.plus:active {
+  color: #d34144; /* Keep red color on click or focus */
+  background-color: transparent; /* No background color change */
+  box-shadow: none; /* No focus shadow */
+}
+
 /* frontend: HTML/SCSS/JavaScript */
 /* ui framework: bootstrap */
 /* Backed: Rails */
@@ -186,11 +218,11 @@ p.project-info {
   width:60px;
 }
 
-.paw-time-imgs{
+#paw-time-img{
   width:400px;
 }
 
-.care-key-imgs{
+#care-key-img{
   height:400px;
 }
 
@@ -221,6 +253,22 @@ p.project-info {
     line-height: 1.4;
   }
 
+  .tech-stack {
+    font-size: 1.2rem;
+    padding: 1.25rem 1.75rem;    /* 2 rem for top & bottom, 1rem for L/R */
+  }
+
+  #projects {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #projects-container {
+    padding-left: 0rem;
+  }
+
   .sections {
     padding-right: 7rem;
     padding-left:  7rem;
@@ -234,13 +282,6 @@ p.project-info {
     margin-bottom: 1.5rem;
   }
 
-  /* Make img to the left */
-  /* how do i make img + content align? */
-  /* whats the parent container of img + content? */
-    /* card-care-key */
-  /* Parent container */
-
-
   .cards {
     display: flex;
     flex-direction: row;
@@ -249,15 +290,9 @@ p.project-info {
     /* why is it all crammed up though? */
     margin-bottom: 4rem;
     width: 100%;
-    gap: 5rem;
+    gap: 2rem;
     /* max-width: 100%;
     min-width: 150px; */
-  }
-
-  .project-imgages {
-    width: 45%;
-    height: auto;
-    object-fit: cover;
   }
 
   /* Child container */
@@ -265,10 +300,83 @@ p.project-info {
     display: flex;
     flex-direction: column;
     text-align: center; /* Centers the text inside the box */
-    justify-content: center;
-    align-items: center;
-    padding: 1.25rem; /* Space inside each box */
-    height:6.25rem;
-    width: 30rem; /* Width of each box */
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* padding: 1.25rem; Space inside each box */
+    padding-left: 0;
+    padding-right: 2.75rem;
+    padding-top: 0;
+    padding-bottom: 1.25rem;
+    /* height:6.25rem; */
+    height: auto;
+    width: 36rem; /* Width of each box */
+    /* background-color: burlywood; */
   }
+
+  .card-img-container{
+    aspect-ratio: 4 / 3; /* Set the ratio (e.g., 4:3 for landscape) */
+    width: 80%; /* Adjust as needed */
+    max-width: 20rem; /* Limit size */
+    height: 19rem;
+    overflow: hidden;
+    /* background-color: #f0f0f0; */
+    /* Delete later ^ */
+  }
+
+  #projects-title-container{
+    padding-right: 7rem;
+    padding-left:  7rem;
+    padding-top: 4.25rem;
+    padding-bottom: 0;
+  }
+
+  .project-title-github-container{
+    padding-top: 0;
+  }
+
+  .project-images {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 4rem;
+  }
+
+  .card-img-container{
+    aspect-ratio: 4 / 3; /* Set the ratio (e.g., 4:3 for landscape) */
+    width: 80%; /* Adjust as needed */
+    max-width: 20rem; /* Limit size */
+    height: 19rem;
+    /* overflow: hidden; */
+    /* background-color: #f0f0f0; */
+    padding-top: 0;
+    display: flex; /* If using Flexbox */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align items to the start horizontally */
+    /* Delete later ^ */
+    line-height: 0;
+  }
+
+  #paw-time-img {
+    padding-left: 3rem;
+    padding-top: 0;
+    /* background-color:rgb(64, 129, 209); */
+    display: block; /* Makes the image a block-level element */
+    height: auto; /* Ensures proper alignment */
+  }
+
+  #contact {
+    /* overflow: visible; */
+    padding-bottom: 1000px;
+    margin: 0 auto;
+  }
+
+
+  /* #paw-time-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+  } */
 }
