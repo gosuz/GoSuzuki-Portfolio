@@ -410,6 +410,26 @@ a.plus:active {
     padding-right: 10rem; */
   }
 
+  .my-photo-and-intro {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .prof-pic {
+    width: 290px; /* You can set a size for the image to control its width */
+    height: auto;
+  }
+
+  #about-me-description {
+    margin: 0; /* Removes default margins around the paragraph */
+    width: 60%;
+    /* flex-grow: 1; */
+    /* background-color: red; */
+    margin-left: 6rem;
+    margin-top: 5rem;
+  }
+
   .cards{
     display: flex;
     margin: 0;
